@@ -1,6 +1,6 @@
 from os import getcwd, geteuid, popen
 
-print("[+]Installing BruteCat.......")
+print("[+]BruteCat Installation.......")
 
 def create_launcher():
     path = getcwd()
