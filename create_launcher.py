@@ -4,10 +4,10 @@ print("[+]BruteCat Installation.......")
 
 def create_launcher():
     path = getcwd()
-    lanchwrite = open("/usr/local/bin/brutecat", "w")
-    lanchwrite.write("#!/bin/sh\ncd %s\npython brutecat.py" % (path))
+    lanchwrite = open("/usr/local/bin/bruteforcer", "w")
+    lanchwrite.write("#!/bin/sh\ncd %s\npython bruteforcer.py" % (path))
     lanchwrite.close()
-    popen("chmod +x /usr/local/bin/brutecat")
+    popen("chmod +x /usr/local/bin/bruteforcer")
 
 if geteuid() != 0:
     print("\n[!] This script must run as root. Please sudo it up! Exiting...")
